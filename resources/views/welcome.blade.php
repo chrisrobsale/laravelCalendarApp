@@ -98,20 +98,20 @@
             </div>
             @for ($i = 1; $i <= count($dayList); $i++)
               @if($dayList[$i]['isSelected'])
-              <div class="row border-bottom mt-2 mb-2 bg-success text-white">
-                <div class="col-3">
+              <div class="row border-bottom pt-3 bg-success text-white">
+                <div class="col-md-3 col-sm-6">
                   <p class="dateVal">{{ $dayList[$i]['dateValue'] }} {{ $dayList[$i]['dayText'] }}</p>
                 </div>
-                <div class="col-9">
+                <div class="col-md-9 col-sm-6">
                   <p class="eventName">{{ $currData["eventName"] }}</p>
                 </div>
               </div>
               @else
-              <div class="row border-bottom mt-2 mb-2">
-                <div class="col-3">
+              <div class="row border-bottom pt-3">
+                <div class="col-md-3 col-sm-6">
                   <p class="dateVal">{{ $dayList[$i]['dateValue'] }} {{ $dayList[$i]['dayText'] }}</p>
                 </div>
-                <div class="col-9">
+                <div class="col-md-9 col-sm-6">
                   <p class="eventName"></p>
                 </div>
               </div>
